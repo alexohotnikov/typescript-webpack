@@ -1,10 +1,15 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
-const App = () => {
+interface AppProps  {
+  name: string,
+  age: number
+}
+
+const App = ({name, age}) => {
   return(
-    <p> Hello Form tsx</p>
+    <p> Hello {name}. You age is {age}</p>
   )
 }
 
-ReactDOM.render(<App/>, document.querySelector('#root'))
+ReactDOM.render(<App name="Aleks" age="10"/>, document.querySelector('#root'))

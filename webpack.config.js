@@ -27,6 +27,10 @@ module.exports = {
     contentBase: path.resolve(__dirname, 'dist')
   },
   plugins: [
-    new HtmlWebpackPlugin({ title: 'Hello, TSX', template: './src/index.html'})
+    new HtmlWebpackPlugin({ 
+      filename: 'index.html',
+      title: 'Title',
+      template: './src/index.html'
+    })
   ]
 }
